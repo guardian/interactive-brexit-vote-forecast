@@ -1,0 +1,146 @@
+@import "mq";
+@import "fonts";
+@import "palette";
+// Uncomment for embeds
+@import "embed";
+// Uncomment for full screen (including immersive article main media)
+//@import "fullscreen";
+
+
+$other : #e3e3e3;
+$labour: #E42729;
+$con: #005789;
+$libdem: #ffb900;
+$green: #53AC32;
+$dup: #7D0068;
+$snp: #fcdd03;
+$green: green;
+$pc: darkgreen;
+$independent:$neutral-46;
+
+
+.element-atom,
+.interactive-atom {
+    margin: 0 !important;
+
+}
+
+.gv-chart-wrapper {
+    border-top: 1px solid #dcdcdc;
+    border-bottom: 1px solid #dcdcdc;
+    background-color: white;
+}
+
+.gv-minichart {
+    height: 160px;
+    margin-top: 20px;
+}
+
+.gv-total-number {
+    @include fs-headline(3);
+    font-size: 24px;
+    font-weight: 800;
+}
+
+.gv-leftovers {
+    @include fs-textSans(3);
+}
+.gv-minichart-title {
+    @include fs-headline(3);
+    font-size: 24px;
+    font-weight: 200;
+    margin-bottom: 10px;
+}
+.gv-bars-wrapper {
+    margin-bottom: 45px;}
+
+.gv-bar {
+    display: inline-block;
+    height: 40px;
+    background-color: red;
+
+    &.gv-Con {
+        background-color: $con;
+    }
+    &.gv-Labour {
+        background-color: $labour;
+    }
+    &.gv-LibDem {
+        background-color: $libdem;
+    }
+    &.gv-Green {
+        background-color: $green;
+    }
+    &.gv-SNP {
+        background-color: $snp;
+    }
+    &.gv-DUP {
+        background-color: $dup;
+    }
+    &.gv-Independent {
+        background-color: $independent;
+    }
+    &.gv-PC {
+        background-color: $pc;
+    }
+    &.gv-unconfirmedFor {
+    opacity: 0.6;    }
+}
+.gv-bar-label-number {
+    position:absolute;
+    margin-top: 42px;
+    font-weight: 800;
+    &.gv-Labour {
+        color: $labour;
+    }
+    &.gv-Con {
+        color: $con;
+    }
+}
+.gv-bar-label-party {
+    position:absolute;
+    margin-top: 65px;
+    @include fs-textSans(2);
+    color: $neutral-46;
+}
+
+.gv-bar-label-unconfirmed {
+    position:absolute;
+    margin-top: 47px;
+    margin-left: 22px;
+    @include fs-textSans(2);
+color: black;
+}
+
+.gv-leftover-label {
+    
+}
+
+.gv-leftovers-number {
+    @include fs-headline(2);
+    font-weight: 800;
+    &.gv-Con {
+        color: $con;
+    }
+    &.gv-Labour {
+        color: $labour;
+    }
+    &.gv-LibDem {
+        color: $libdem;
+    }
+    &.gv-Green {
+        color: $green;
+    }
+    &.gv-SNP {
+        color: $snp;
+    }
+    &.gv-DUP {
+        color: $dup;
+    }
+    &.gv-Independent {
+        color: $independent;
+    }
+    &.gv-PC {
+        color: $pc;
+    }   
+}
