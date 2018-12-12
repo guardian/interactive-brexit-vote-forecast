@@ -80,8 +80,14 @@ $independent:$neutral-46;
     &.gv-Independent {
         background-color: $independent;
     }
-    &.gv-PC {
-        background-color: $pc;
+    &.gv-Declared {
+        background-color: $con;
+    }
+    &.gv-Undeclared {
+        background-color: $independent;
+    }
+    &.gv-Refusedtosay {
+        background-color: $live-blue;
     }
     &.gv-unconfirmedFor {
     opacity: 0.6;    }

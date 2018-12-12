@@ -1,18 +1,17 @@
 <div class="gv-label"></div>
 
 <div class="gv-minichart gv-against">
-    <div class="gv-minichart-title"><span class="gv-total-number">{{totalAgainst}}</span> voting against the deal</div>
+    <div class="gv-minichart-title"><span class="gv-total-number">{{totalAgainst}}</span> not explicitly supporting May</div>
     <div class="gv-bars-wrapper">
-        {{#totals}}<div class="gv-bar gv-{{Party}}" style="width:{{againstWidth}}%">{{#majorAgainst}}<span class="gv-bar-label-party">{{Party}}</span><span class="gv-bar-label-number gv-{{Party}}">{{Against}}</span>{{/majorAgainst}}</div>{{/totals}}
+        {{#totals}}<div class="gv-bar gv-{{PartyClass}}" style="width:{{againstWidth}}%">{{#majorAgainst}}<span class="gv-bar-label-party">{{Party}}</span><span class="gv-bar-label-number gv-{{PartyClass}}">{{Against}}</span>{{/majorAgainst}}</div>{{/totals}}
     </div>
-    <div class="gv-leftovers">and {{#totals}}{{^majorAgainst}}<span class="gv-leftovers-number gv-{{Party}}">{{Against}}</span> <span class="gv-leftover-label gv-{{Party}}"> {{Party}}</span> {{/majorAgainst}}{{/totals}}</div>
+    <div class="gv-leftovers">and {{#totals}}{{^majorAgainst}}<span class="gv-leftovers-number gv-{{PartyClass}}">{{Against}}</span> <span class="gv-leftover-label gv-{{PartyClass}}"> {{Party}}</span> {{/majorAgainst}}{{/totals}}</div>
 </div>
 
 <div class="gv-minichart gv-for">
-    <div class="gv-minichart-title"><span class="gv-total-number">{{totalFor}}</span> voting for the deal</div>
+    <div class="gv-minichart-title"><span class="gv-total-number">{{totalFor}}</span> supporting May</div>
     <div class="gv-bars-wrapper">
-        {{#totals}}<div class="gv-bar gv-{{Party}} gv-confirmedFor" style="width:{{confirmedForWidth}}%">{{#majorFor}}<span class="gv-bar-label-party">{{Party}}</span><span class="gv-bar-label-number gv-{{Party}}">{{For}}</span>{{/majorFor}}</div><div class="gv-bar gv-{{Party}} gv-unconfirmedFor" style="width:{{unconfirmedWidth}}%"><span class="gv-bar-label-number gv-{{Party}}">{{#majorFor}}{{UnconfirmedFors}}</span><span class="gv-bar-label-unconfirmed">unconfirmed</span>{{/majorFor}}</span></div>{{/totals}}
+        {{#totals}}<div class="gv-bar gv-{{PartyClass}}" style="width:{{forWidth}}%">{{#majorFor}}<span class="gv-bar-label-party">{{Party}}</span><span class="gv-bar-label-number gv-{{PartyClass}}">{{For}}</span>{{/majorFor}}</div>{{/totals}}
     </div>
-    <div class="gv-leftovers">and {{#totals}}{{^majorFor}}{{^zeroFor}}<span class="gv-leftovers-number gv-{{Party}}">{{For}}</span><span class="gv-leftover-label gv-{{Party}}"> {{Party}}</span></span> {{/zeroFor}}{{/majorFor}}{{/totals}}</div>
 
 </div>
